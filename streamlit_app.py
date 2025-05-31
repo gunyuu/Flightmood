@@ -9,10 +9,9 @@ model = genai.GenerativeModel("models/gemini-1.5-flash")
 # App config
 st.set_page_config(page_title="Flight Mood ✈️", page_icon="🛫")
 st.title("🛫 Flight Mode")
-st.subheader("Ever feel like a hydraulic system under pressure? Or maybe just a backup generator keeping everyone going?
-Step into Flight Mode—where your mood meets machinery.
-Discover which aircraft system you are today, and why.
-It's not just personality. It's ATA-approved.")
+st.subheader("Ever feel like a hydraulic system under pressure? Or maybe just a backup generator keeping everyone going?")
+st.subheader("Discover which aircraft system you are today, and why.")
+st.subheader("It's not just personality. It's ATA-approved.")
 
 # Inputs
 mood = st.selectbox("How are you feeling today?", [
