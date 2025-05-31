@@ -8,8 +8,8 @@ model = genai.GenerativeModel("models/gemini-1.5-flash")
 
 # App config
 st.set_page_config(page_title="Flight Mood ✈️", page_icon="🛫")
-st.title("🛫 Flight Mode")
-st.subheader("Ever feel like a hydraulic system under pressure? Or maybe just a backup generator keeping everyone going?")
+st.title("🛫 Flight Mood")
+st.markdown("<p style='font-size: 16px; font-style: italic;'>Ever feel like a hydraulic system under pressure? Or maybe just a backup generator keeping everyone going?</p>", unsafe_allow_html=True)
 st.subheader("Discover which aircraft system you are today, and why.")
 st.subheader("It's not just personality. It's ATA-approved.")
 
