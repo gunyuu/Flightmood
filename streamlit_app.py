@@ -7,9 +7,12 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = genai.GenerativeModel("models/gemini-1.5-flash")
 
 # App config
-st.set_page_config(page_title="Flight Mode ✈️", page_icon="🛫")
+st.set_page_config(page_title="Flight Mood ✈️", page_icon="🛫")
 st.title("🛫 Flight Mode")
-st.subheader("What aircraft system are you today?")
+st.subheader("Ever feel like a hydraulic system under pressure? Or maybe just a backup generator keeping everyone going?
+Step into Flight Mode—where your mood meets machinery.
+Discover which aircraft system you are today, and why.
+It's not just personality. It's ATA-approved.")
 
 # Inputs
 mood = st.selectbox("How are you feeling today?", [
